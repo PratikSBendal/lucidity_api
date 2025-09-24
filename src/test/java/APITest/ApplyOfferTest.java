@@ -29,7 +29,7 @@ public class ApplyOfferTest {
 				}
 			}
 
-			// Call API
+			// Call API 
 			response = applyoffermethod.postApplyOffer(request);
 			Assert.assertEquals(response.getStatusCode(), 200, "Apply Offer Fail");
 			System.out.println("Apply Offer created successfully.");
