@@ -1,0 +1,160 @@
+[
+  {
+    "request": { "cart_value": 1000, "user_id": 1, "restaurant_id": 1 },
+    "expected_response": { "cart_value": 850 }
+  },
+  {
+    "request": { "cart_value": 1000, "user_id": 2, "restaurant_id": 1 },
+    "expected_response": { "cart_value": 700 }
+  },
+  {
+    "request": { "cart_value": 2000, "user_id": 3, "restaurant_id": 1 },
+    "expected_response": { "cart_value": 1800 }
+  },
+  {
+    "request": { "cart_value": 2000, "user_id": 4, "restaurant_id": 1 },
+    "expected_response": { "cart_value": 1600 }
+  },
+  {
+    "request": { "cart_value": 5000, "user_id": 5, "restaurant_id": 1 },
+    "expected_response": { "cart_value": 4900 }
+  },
+  {
+    "request": { "cart_value": 5000, "user_id": 6, "restaurant_id": 1 },
+    "expected_response": { "cart_value": 4500 }
+  },
+  {
+    "request": { "cart_value": 1000, "user_id": 7, "restaurant_id": 2 },
+    "expected_response": { "cart_value": 830 }
+  },
+  {
+    "request": { "cart_value": 1000, "user_id": 8, "restaurant_id": 2 },
+    "expected_response": { "cart_value": 750 }
+  },
+  {
+    "request": { "cart_value": 2000, "user_id": 9, "restaurant_id": 2 },
+    "expected_response": { "cart_value": 1900 }
+  },
+  {
+    "request": { "cart_value": 2000, "user_id": 10, "restaurant_id": 2 },
+    "expected_response": { "cart_value": 1600 }
+  },
+  {
+    "request": { "cart_value": 5000, "user_id": 11, "restaurant_id": 2 },
+    "expected_response": { "cart_value": 4950 }
+  },
+  {
+    "request": { "cart_value": 5000, "user_id": 12, "restaurant_id": 2 },
+    "expected_response": { "cart_value": 4750 }
+  },
+  {
+    "request": { "cart_value": 2200, "user_id": 13, "restaurant_id": 1 },
+    "expected_response": { "cart_value": 1700 }
+  },
+  {
+    "request": { "cart_value": 2200, "user_id": 14, "restaurant_id": 1 },
+    "expected_response": { "cart_value": 1100 }
+  },
+  {
+    "request": { "cart_value": 4000, "user_id": 15, "restaurant_id": 1 },
+    "expected_response": { "cart_value": 3700 }
+  },
+  {
+    "request": { "cart_value": 4000, "user_id": 16, "restaurant_id": 1 },
+    "expected_response": { "cart_value": 3000 }
+  },
+  {
+    "request": { "cart_value": 3500, "user_id": 17, "restaurant_id": 1 },
+    "expected_response": { "cart_value": 3350 }
+  },
+  {
+    "request": { "cart_value": 3500, "user_id": 18, "restaurant_id": 1 },
+    "expected_response": { "cart_value": 2800 }
+  },
+  {
+    "request": { "cart_value": 6000, "user_id": 19, "restaurant_id": 1 },
+    "expected_response": { "cart_value": 5500 }
+  },
+  {
+    "request": { "cart_value": 6000, "user_id": 20, "restaurant_id": 1 },
+    "expected_response": { "cart_value": 3000 }
+  },
+  {
+    "request": { "cart_value": 2200, "user_id": 21, "restaurant_id": 2 },
+    "expected_response": { "cart_value": 1600 }
+  },
+  {
+    "request": { "cart_value": 2200, "user_id": 22, "restaurant_id": 2 },
+    "expected_response": { "cart_value": 880 }
+  },
+  {
+    "request": { "cart_value": 4000, "user_id": 23, "restaurant_id": 2 },
+    "expected_response": { "cart_value": 3550 }
+  },
+  {
+    "request": { "cart_value": 4000, "user_id": 24, "restaurant_id": 2 },
+    "expected_response": { "cart_value": 2200 }
+  },
+  {
+    "request": { "cart_value": 3500, "user_id": 25, "restaurant_id": 2 },
+    "expected_response": { "cart_value": 3200 }
+  },
+  {
+    "request": { "cart_value": 3500, "user_id": 26, "restaurant_id": 2 },
+    "expected_response": { "cart_value": 2275 }
+  },
+  {
+    "request": { "cart_value": 6000, "user_id": 27, "restaurant_id": 2 },
+    "expected_response": { "cart_value": 5400 }
+  },
+  {
+    "request": { "cart_value": 6000, "user_id": 28, "restaurant_id": 2 },
+    "expected_response": { "cart_value": 2400 }
+  },
+
+  //-- Invalid & Error cases
+  {
+    "request": { "cart_value": 130, "user_id": 1, "restaurant_id": 1 },
+    "expected_response": { "error": "Cart Value less than 'offer Value" }
+  },
+  {
+    "request": { "cart_value": 0, "user_id": 2, "restaurant_id": 1 },
+    "expected_response": { "error": "Cart Value less than 'offer Value" }
+  },
+  {
+    "request": { "cart_value": 100, "user_id": 3, "restaurant_id": 1 },
+    "expected_response": { "error": "Cart Value less than 'offer Value" }
+  },
+  {
+    "request": { "cart_value": 0, "user_id": 4, "restaurant_id": 1 },
+    "expected_response": { "error": "Cart Value less than 'offer Value" }
+  },
+  {
+    "request": { "cart_value": 50, "user_id": 5, "restaurant_id": 1 },
+    "expected_response": { "error": "Cart Value less than 'offer Value" }
+  },
+  {
+    "request": { "cart_value": 0, "user_id": 6, "restaurant_id": 1 },
+    "expected_response": { "error": "Cart Value less than 'offer Value" }
+  },
+  {
+    "request": { "cart_value": -1, "user_id": 6, "restaurant_id": 1 },
+    "expected_response": { "error": "Cart Value Invalid" }
+  },
+  {
+    "request": { "cart_value": 5000, "user_id": -1, "restaurant_id": 1 },
+    "expected_response": { "error": "User id Invalid" }
+  },
+  {
+    "request": { "cart_value": 500, "user_id": 6, "restaurant_id": 0 },
+    "expected_response": { "error": "Restuarant id Invalid" }
+  },
+  {
+    "request": {},
+    "expected_response": { "error": "400 Bad request" }
+  },
+  {
+    "request": { "cart_value": 6000, "user_id": 28, "restaurant_id": 2 },
+    "expected_response": { "error": "405 Method Not allowed" }
+  }
+]

@@ -1,0 +1,188 @@
+[
+  {
+    "restaurant_id": 1,
+    "offer_type": "FLATX",
+    "offer_value": 150,
+    "customer_segment": ["p1"]
+  },
+  {
+    "restaurant_id": 1,
+    "offer_type": "FLAT%",
+    "offer_value": 30,
+    "customer_segment": ["p1"]
+  },
+  {
+    "restaurant_id": 1,
+    "offer_type": "FLATX",
+    "offer_value": 200,
+    "customer_segment": ["p2"]
+  },
+  {
+    "restaurant_id": 1,
+    "offer_type": "FLAT%",
+    "offer_value": 20,
+    "customer_segment": ["p2"]
+  },
+  {
+    "restaurant_id": 1,
+    "offer_type": "FLATX",
+    "offer_value": 100,
+    "customer_segment": ["p3"]
+  },
+  {
+    "restaurant_id": 1,
+    "offer_type": "FLAT%",
+    "offer_value": 10,
+    "customer_segment": ["p3"]
+  },
+  {
+    "restaurant_id": 2,
+    "offer_type": "FLATX",
+    "offer_value": 170,
+    "customer_segment": ["p1"]
+  },
+  {
+    "restaurant_id": 2,
+    "offer_type": "FLAT%",
+    "offer_value": 25,
+    "customer_segment": ["p1"]
+  },
+  {
+    "restaurant_id": 2,
+    "offer_type": "FLATX",
+    "offer_value": 100,
+    "customer_segment": ["p2"]
+  },
+  {
+    "restaurant_id": 2,
+    "offer_type": "FLAT%",
+    "offer_value": 20,
+    "customer_segment": ["p2"]
+  },
+  {
+    "restaurant_id": 2,
+    "offer_type": "FLATX",
+    "offer_value": 50,
+    "customer_segment": ["p3"]
+  },
+  {
+    "restaurant_id": 2,
+    "offer_type": "FLAT%",
+    "offer_value": 5,
+    "customer_segment": ["p3"]
+  },
+  {
+    "restaurant_id": 1,
+    "offer_type": "FLATX",
+    "offer_value": 500,
+    "customer_segment": ["p1", "p2"]
+  },
+  {
+    "restaurant_id": 1,
+    "offer_type": "FLAT%",
+    "offer_value": 50,
+    "customer_segment": ["p1", "p2"]
+  },
+  {
+    "restaurant_id": 1,
+    "offer_type": "FLATX",
+    "offer_value": 300,
+    "customer_segment": ["p1", "p3"]
+  },
+  {
+    "restaurant_id": 1,
+    "offer_type": "FLAT%",
+    "offer_value": 25,
+    "customer_segment": ["p1", "p3"]
+  },
+  {
+    "restaurant_id": 1,
+    "offer_type": "FLATX",
+    "offer_value": 150,
+    "customer_segment": ["p2", "p3"]
+  },
+  {
+    "restaurant_id": 1,
+    "offer_type": "FLAT%",
+    "offer_value": 20,
+    "customer_segment": ["p2", "p3"]
+  },
+  {
+    "restaurant_id": 1,
+    "offer_type": "FLATX",
+    "offer_value": 500,
+    "customer_segment": ["p1", "p2", "p3"]
+  },
+  {
+    "restaurant_id": 1,
+    "offer_type": "FLAT%",
+    "offer_value": 50,
+    "customer_segment": ["p1", "p2", "p3"]
+  },
+  {
+    "restaurant_id": 2,
+    "offer_type": "FLATX",
+    "offer_value": 600,
+    "customer_segment": ["p1", "p2"]
+  },
+  {
+    "restaurant_id": 2,
+    "offer_type": "FLAT%",
+    "offer_value": 60,
+    "customer_segment": ["p1", "p2"]
+  },
+  {
+    "restaurant_id": 2,
+    "offer_type": "FLATX",
+    "offer_value": 450,
+    "customer_segment": ["p1", "p3"]
+  },
+  {
+    "restaurant_id": 2,
+    "offer_type": "FLAT%",
+    "offer_value": 45,
+    "customer_segment": ["p1", "p3"]
+  },
+  {
+    "restaurant_id": 2,
+    "offer_type": "FLATX",
+    "offer_value": 300,
+    "customer_segment": ["p2", "p3"]
+  },
+  {
+    "restaurant_id": 2,
+    "offer_type": "FLAT%",
+    "offer_value": 35,
+    "customer_segment": ["p2", "p3"]
+  },
+  {
+    "restaurant_id": 2,
+    "offer_type": "FLATX",
+    "offer_value": 600,
+    "customer_segment": ["p1", "p2", "p3"]
+  },
+  {
+    "restaurant_id": 2,
+    "offer_type": "FLAT%",
+    "offer_value": 60,
+    "customer_segment": ["p1", "p2", "p3"]
+  },
+
+  //-- Invalid / Edge cases
+  {
+    "restaurant_id": -1,
+    "offer_type": "FLAT%",
+    "offer_value": 60,
+    "customer_segment": ["p1"]
+  },
+  {
+    "restaurant_id": 1,
+    "offer_type": "OFFER",
+    "offer_value": 60,
+    "customer_segment": ["p1"]
+  },
+  {
+    "restaurant_id": 2,
+    "offer_type": "FLATX",
+    "offer_value": null,
+    "customer_segment": ["p1"]()_
