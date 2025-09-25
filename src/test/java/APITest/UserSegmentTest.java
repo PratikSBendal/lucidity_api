@@ -3,6 +3,7 @@ package APITest;
 import java.util.Map;
 
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import apimethod.UserSegment;
 import io.restassured.response.Response;
@@ -12,6 +13,7 @@ public class UserSegmentTest {
 	UserSegment usersegmentmethod = new UserSegment();
 	Response response = null;
 
+	@Test
 	public void testUserSegment() {
 		try {
 			response = usersegmentmethod.getUserSegment();

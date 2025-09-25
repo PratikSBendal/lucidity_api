@@ -3,6 +3,7 @@ package APITest;
 import java.util.Map;
 
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import apimethod.Offer;
 import io.restassured.response.Response;
@@ -12,6 +13,7 @@ public class OfferTest {
 	Offer offermethod = new Offer();
 	Response response = null;
 	
+	@Test
 	public void testOffer() {
 	try {
 		Map<String, Object> offerfdata = JsonReader.getJsonData("JsonTestData/createoffer.json");

@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import apimethod.ApplyOffer;
 import io.restassured.response.Response;
@@ -13,6 +14,7 @@ public class ApplyOfferTest {
 	ApplyOffer applyoffermethod = new ApplyOffer();
 	Response response = null;
 
+	@Test
 	public void testApplyOffer() {
 		try {
 			Map<String, Object> applyofferdata = JsonReader.getJsonData("JsonTestData/applyoffer.json");
